@@ -1,4 +1,4 @@
-import { AwesomeBooks } from './modules/awebooks.js';
+import AwesomeBooks from './modules/awebooks.js';
 import { DateTime } from './modules/luxon.js';
 
 const book = new AwesomeBooks();
@@ -30,7 +30,6 @@ addButton.addEventListener('click', () => {
 
 window.onload = () => {
   const inputs = document.querySelector('.inputs');
-  const bookSec = document.querySelector('.list_div');
   const contDiv = document.querySelector('.contDiv');
 
   contDiv.classList.add('hide');
@@ -89,7 +88,6 @@ navTitle.addEventListener('click', () => {
 
   inputs.classList.add('hide');
 });
-
 
 window.setInterval(() => {
   const clock = document.querySelector('.clock');

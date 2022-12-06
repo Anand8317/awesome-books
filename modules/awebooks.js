@@ -1,4 +1,4 @@
-export class AwesomeBooks {
+class AwesomeBooks {
   booksList = [];
 
   addToBooksList = (title, author) => {
@@ -27,3 +27,5 @@ export class AwesomeBooks {
     }
   };
 }
+
+export default AwesomeBooks;
